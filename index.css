@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif
+}
+
+body {
+    height: auto;
+    width: 100%;
+    background-color: #e7d7b6
+}
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+}
+
+nav {
+    height: 96px;
+    width:950px;
+    background-color: #e7d7b6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 65px;
+}
+
+#logo img{
+    cursor: pointer;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 30px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+#nav-item {
+    background-color: #152536;
+    color:white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+/*  */
+.dropdownEdu {
+    float:right;
+    overflow: hidden;
+  }
+  
+  .dropdownEdu .dropbtnEdu {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+.dropdown-content-edu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 300px
+  }
+  
+  .dropdown-content-edu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 12px;
+    background-color: ivory;
+  }
+  
+  .dropdown-content-edu a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdownEdu:hover .dropdown-content-edu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropbtnEdu:hover {
+      color: grey
+  }
+/*  */
+.dropdownExp {
+    float:left;
+    overflow: hidden;
+  }
+  
+  .dropdownExp .dropbtnExp {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+.dropdown-content-exp {
+    display: none;
+    position: absolute;
+    background-color: camel;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 640px;
+    height: 280px;
+  }
+  #dropLeft, #dropRight {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 12px;
+    background-color: ivory;
+  }
+  #dropLeft b {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  #dropRight b {
+    text-align: center;
+    margin-bottom: 10px;
+}
+  #dropLeft a, #dropRight a {
+    display: flex;
+    flex-direction: column;
+    border: 10px 0 10px 0;
+}
+  .dropdown-content-exp a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdownExp:hover .dropdown-content-exp {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+.dropdownExp:hover #dropLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 5px 0;
+}
+.dropbtnExp:hover {
+    color: grey
+}
+/*  */
+.dropdownSkills {
+    float:right;
+    overflow: hidden;
+  }
+  
+  .dropdownSkills .dropbtnSkills {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+  }
+.dropdown-content-skills {
+    display: none;
+    position: absolute;
+    background-color: camel;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 340px;
+    height: 150px;
+  }
+  #skillsLeft, #skillsRight {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 12px;
+    background-color: ivory;
+  }
+  #skillsRight b {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+  .dropdown-content-skills a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdownSkills:hover .dropdown-content-skills {
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+.dropdownSkills:hover #skillsLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 5px 0;
+}
+.dropbtnSkills:hover {
+    color: grey
+}
+/*  */
+
+.middle {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+}
+#kiriIsi {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-top: 70px;
+    background-color: #e7d7b6;
+    /* justify-content: center; */
+}
+#dp {
+    /* background: url(dp.jpeg) no-repeat center;
+    background-size: 350px 250px; */
+    flex-basis: 40%;
+    margin: auto;
+    /* justify-self: center; */
+}
+#siapa {
+    background-color: #e7d7b6;
+    flex-basis: 60%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    text-align: center;
+    color: #152536
+    /* padding: 20px 0 20px 20px; */
+}
+#student {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 200;
+    line-height: 16px;
+}
+#kananKosong {
+    display: flex;
+    flex-grow: 2;
+    background: url(./20201127_003930_0000.png) no-repeat bottom;
+    background-size: 600px 350px;
+    background-color: white;
+}
+#kananKosong p {
+    margin-left: 140px;
+    width: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+hr {
+    color: black;
+    size: 10px
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    flex-basis: 15%;
+    padding-top: 80px;
+}
+#menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px 0
+}
+#socmed {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 390.6px;
+    background-color: cornsilk;
+    border-radius: 4px;
+}
+#ig, #medium, #linkedin {
+    color:black;
+    text-decoration: none;
+    margin: 10px 30px 0 30px;
+}
+#socmed:hover {
+    color: rgb(197, 197, 197)
+}
+#ig:hover, #medium:hover, #linkedin:hover {
+    color: blue
+}
+#menu p {
+    line-height: 24px;
+    height: 24px;
+    width: 59.63px;
+    margin: 10px 0 0 30px;
+}
+#cr {
+    height: 68px;
+    width: 271.32px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 800px
+}
+#cr span {
+    font-size: 28px;
+    line-height: 36px
+}
